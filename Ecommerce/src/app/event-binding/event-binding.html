@@ -1,0 +1,31 @@
+<!-- Event Binding -->
+
+
+<!-- <input type="text" name="Name" id="" placeholder="Enter Your Name" class="form-control p-2" (input)="getInputValue($event)">
+
+
+//Normal Way
+<p>{{inputValue}}</p> -->
+
+<!-- <button class="btn btn-primary m-3" (click)="ShowData()">Click</button> -->
+
+<!-- //Template Form -->
+
+<!-- <input type="text" name="Name" id="" placeholder="Enter Your Name" class="form-control p-2" [(ngModel)]="inputValue"> -->
+
+<!-- [()]
+ ngModel
+Banana in a box -->
+
+
+<!-- <p>{{inputValue}}</p> -->
+ <!-- reference -->
+ <!-- <h1 #hh>Login</h1>
+ <button class="btn btn-primary" (click)="display(hh)">Click</button> -->
+
+
+
+ 
+<input type="text" name="Name" id="" placeholder="Enter Your Name" class="form-control p-2" #myInput  (input)="getInputValue(myInput.value)">
+
+<p>{{inputValue}}</p>

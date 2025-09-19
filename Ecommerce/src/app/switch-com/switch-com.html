@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Your fav Color</h1>
+    @switch (color) {
+        @case ('red') {
+<div class="alert alert-danger">
+        Your Fav Color is red
+    </div>
+        }
+        @case ('green') {
+             <div class="alert alert-success">
+        Your Fav Color is green
+    </div>
+        }
+        @case ('blue') {
+<div class="alert alert-primary">
+        Your Fav Color is blue
+    </div>
+        }
+@default {
+ <div class="alert ">
+        No Fav color
+    </div>
+}
+    }
+    
+    
+   
+
+</div>

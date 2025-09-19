@@ -1,0 +1,49 @@
+<!-- 
+<div class="container mt-5 p-3">
+    <div class="row">
+        <div class="col-sm-3">
+            <select name="studentName" id=""  class="form-select" [(ngModel)] ="selectedTeam" (change)="filterAllStudents()">
+                <option value="All">All</option>
+                <option value="Team1">Team 1</option>
+                <option value="Team2">Team 2</option>
+                <option value="Team3">Team 3</option>
+            </select>
+        </div>
+        <div class="col-sm-9">
+
+            @for(student of filteredTeams; track $index){
+            <div class="border rounded">
+                <p>{{student.name}}</p>
+                
+            </div>
+            }
+           
+        </div>
+    </div>
+
+</div> -->
+
+
+
+
+<div class="container">
+    <button class="btn btn-dark" (click)="toggle()">Toggle</button>
+    <!-- <div class="border p-3 mt-5 rounded" *ngIf="flag">
+        <h1>Welcome Angular @ ITI</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur delectus dolores maxime deleniti saepe expedita quisquam aut voluptatem maiores. Inventore eum debitis pariatur ducimus ex aliquid magnam nisi rerum.</p>
+    </div> -->
+
+
+    @if (flag) {
+<div class="border p-3 mt-5 rounded">
+        <h1>Welcome Angular @ ITI</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur delectus dolores maxime deleniti saepe expedita quisquam aut voluptatem maiores. Inventore eum debitis pariatur ducimus ex aliquid magnam nisi rerum.</p>
+    </div>
+    }
+    @else {
+        <h1>Loading.....</h1>
+    }
+
+
+  
+</div>

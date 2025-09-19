@@ -1,0 +1,34 @@
+<div class="container mt-5">
+    <!-- <h1>Products</h1>
+    <div class="border p-4 m-3 rounded" *ngFor="let product of products ; trackBy">
+        <h3>{{product}}</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum distinctio consequuntur est, amet ea omnis consequatur maxime a, dolores sed quo cum reprehenderit expedita adipisci, nesciunt quam consectetur itaque ut.</p>
+    </div> -->
+    <!-- <div class="border p-4 m-3 rounded">
+        <h3>Pen</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum distinctio consequuntur est, amet ea omnis consequatur maxime a, dolores sed quo cum reprehenderit expedita adipisci, nesciunt quam consectetur itaque ut.</p>
+    </div>
+    <div class="border p-4 m-3 rounded">
+        <h3>Notebook</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum distinctio consequuntur est, amet ea omnis consequatur maxime a, dolores sed quo cum reprehenderit expedita adipisci, nesciunt quam consectetur itaque ut.</p>
+    </div> -->
+
+
+    <h1>Products</h1>
+    <!-- Control Flow 
+    target -> key enhance performance 
+    -->
+
+@for (prod of products; track $index) {
+<div class="border p-4 m-3 rounded" [class.bg-success] ="$even">
+        <h3> {{$index}}.{{prod}}</h3>
+        <p>{{$even}}</p>
+        <p>{{$odd}}</p>
+        <p>{{$first}}</p>
+        <p>{{$last}}</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum distinctio consequuntur est, amet ea omnis consequatur maxime a, dolores sed quo cum reprehenderit expedita adipisci, nesciunt quam consectetur itaque ut.</p>
+    </div>
+}
+    
+
+</div>
