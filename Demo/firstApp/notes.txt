@@ -1,0 +1,34 @@
+---npm i @angular/cli -g
+ng new ProjectName
+
+ng serve
+ng serve -o
+
+---node-modules
+npm i
+
+
+Extensions
+Angular import
+Angular Language Service
+
+
+Create Component
+ng g c ComponentName
+
+ng g c Home --skip-tests
+
+ng g c MyHome/home --skip-tests --flat
+
+
+npm i bootstrap
+
+
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+
+         "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+
+         
+   "scripts": [
+         "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]
