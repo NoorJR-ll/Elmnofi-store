@@ -1,0 +1,25 @@
+.navbar {
+  font-size: 18px;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  color: #e2e8f0 !important;
+}
+
+.nav-link {
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-link, .navbar-brand { color: #e2e8f0 !important; }
+.nav-link:hover { color: #ffffff !important; }
+.navbar-toggler {
+  border: none;
+}
+
+/* Dark navbar background overlay */
+.navbar-dark.bg-dark {
+  background-color: rgba(0,0,0,0.65) !important;
+  backdrop-filter: blur(6px);
+}

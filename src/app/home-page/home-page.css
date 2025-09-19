@@ -1,0 +1,25 @@
+
+.home-page .card .card-title {
+  font-size: 1.50rem;
+}
+
+.home-page .card .card-text.small {
+  font-size: 1.20rem;
+}
+
+.home-page .price {
+  font-size: 1.30rem;
+}
+
+.home-page {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.home-page .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+

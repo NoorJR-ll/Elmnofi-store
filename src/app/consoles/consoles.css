@@ -1,0 +1,46 @@
+:root {
+    --brand-primary: #0d6efd;
+    --brand-secondary: #20c997;
+    --bg-solid: #0f172a; /* solid dark background */
+    --text-on-bg: #e2e8f0;        /* slate-200 */
+  }
+  
+  html, body, app-root, .app-main, .page {
+    min-height: 100%;
+    background-color: var(--bg-solid);
+  }
+  
+  body {
+    margin: 0;
+    color: var(--text-on-bg);
+  }
+  
+  /* Ensure root app spans full width and height on dark background */
+  app-root, .app-main { display: block; width: 100%; }
+  
+  /* Remove any default white background from layout containers */
+  .container, .container-fluid, .row, section {
+    background: transparent !important;
+  }
+  
+  /* Cards on dark bg */
+  .card {
+    background-color: #ffffff;
+    color: #111827; /* gray-900 */
+  }
+  
+  /* Buttons primary/secondary theme */
+  .btn-primary {
+    background-color: var(--brand-primary) !important;
+    border-color: var(--brand-primary) !important;
+  }
+  .btn-success, .btn-secondary {
+    background-color: var(--brand-secondary) !important;
+    border-color: var(--brand-secondary) !important;
+  }
+  
+  /* Navbar on dark bg */
+  .navbar-dark.bg-dark {
+    background-color: rgba(0,0,0,0.65) !important;
+    backdrop-filter: blur(6px);
+  }

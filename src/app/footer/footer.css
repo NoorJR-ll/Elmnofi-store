@@ -1,0 +1,72 @@
+footer {
+  background: linear-gradient(135deg, #0a0d1f, #141a3d);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient border glow */
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(45deg, #00adee, #ff00cc, #00ff88, #ffae00);
+  background-size: 300% 300%;
+  animation: animateFooter 10s linear infinite;
+  opacity: 0.08;
+}
+
+@keyframes animateFooter {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Sections inside footer */
+footer h5, 
+footer h6 {
+  color: #00adee;
+  text-shadow: 0 0 10px rgba(0, 173, 238, 0.6);
+}
+
+footer p, 
+footer a {
+  color: #dcdcdc;
+  font-size: 0.9rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Quick Links hover */
+footer a:hover {
+  color: #00adee;
+  transform: translateX(5px);
+}
+
+/* Social Icons */
+footer .fs-5 {
+  transition: all 0.3s ease;
+}
+footer .fs-5:hover {
+  color: #ff00cc;
+  text-shadow: 0 0 15px #ff00cc;
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* Bottom strip */
+footer .text-center {
+  background: rgba(255,255,255,0.05);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer .col-lg-4, 
+  footer .col-lg-3, 
+  footer .col-lg-2 {
+    text-align: center;
+  }
+}
+

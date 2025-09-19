@@ -1,0 +1,62 @@
+<div class="page container-fluid">
+  <h2 class="mb-4">Consoles</h2>
+  <div class="row g-4">
+    <div class="col-12 col-md-6 col-lg-3" data-category="consoles">
+      <div class="card h-100">
+        <img src="https://m.media-amazon.com/images/I/51QKZfyi-dL._UF1000,1000_QL80_.jpg" class="card-img-top" alt="PS5 Standard Edition">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">PS5 Standard Edition</h5>
+          <p class="card-text small">Ultra-high speed SSD, 4K gaming, DualSense support.</p>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="price">$499</span>
+            <button class="btn btn-ps btn-sm" (click)="addToCart('ps5-standard', 'PS5 Standard Edition', 499, 'https://m.media-amazon.com/images/I/51QKZfyi-dL._UF1000,1000_QL80_.jpg')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3" data-category="consoles">
+      <div class="card h-100">
+        <img src="https://btech.com/media/catalog/product/cache/8e279240a6612e9579d3be696bac1c07/6/1/61jbcra_7gl._sl1500__1.jpg" class="card-img-top" alt="PS5 Digital Edition">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">PS5 Digital Edition</h5>
+          <p class="card-text small">All-digital console with next-gen performance.</p>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="price">$400</span>
+            <button class="btn btn-ps btn-sm" (click)="addToCart('ps5-digital', 'PS5 Digital Edition', 400, 'https://btech.com/media/catalog/product/cache/8e279240a6612e9579d3be696bac1c07/6/1/61jbcra_7gl._sl1500__1.jpg')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3" data-category="consoles">
+      <div class="card h-100">
+        <img src="https://m.media-amazon.com/images/I/615wYfdnG1L.jpg" class="card-img-top" alt="PS4 Slim">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">PS4 Slim 1TB</h5>
+          <p class="card-text small">Sleek design, huge library of PS4 titles.</p>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="price">$299</span>
+            <button class="btn btn-ps btn-sm" (click)="addToCart('ps4-slim', 'PS4 Slim 1TB', 299, 'https://m.media-amazon.com/images/I/615wYfdnG1L.jpg')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3" data-category="consoles">
+      <div class="card h-100">
+        <img src="https://images-cdn.ubuy.co.in/64c9190e21e74a33d9176902-sony-playstation-4-pro-1tb-gaming.jpg" class="card-img-top" alt="PS4 Pro">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">PS4 Pro 1TB</h5>
+          <p class="card-text small">4K entertainment and boosted performance.</p>
+          <div class="mt-auto d-flex justify-content-between align-items-center">
+            <span class="price">$349</span>
+            <button class="btn btn-ps btn-sm" (click)="addToCart('ps4-pro', 'PS4 Pro 1TB', 349, 'https://images-cdn.ubuy.co.in/64c9190e21e74a33d9176902-sony-playstation-4-pro-1tb-gaming.jpg')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  @import url('../shared/page-theme.css');
+</style>
+
+

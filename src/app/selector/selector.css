@@ -1,0 +1,15 @@
+.form-select {
+  max-width: 250px;
+  margin: 0 auto;
+  background-color: #101432;
+  color: #fff;
+  border: 1px solid #00adee;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.form-select:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00adee;
+}
